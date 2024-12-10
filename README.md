@@ -1,8 +1,7 @@
-# React + Vite
+Calculadora de Pagos a Plazos Descripción Esta aplicación es una calculadora de pagos a plazos que permite a los usuarios calcular el total a pagar y las cuotas mensuales en función de una cantidad inicial y un plazo seleccionado. Es una herramienta útil para aquellos que desean entender mejor cómo se distribuyen los pagos de un préstamo o compra a plazos.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Características Interfaz Intuitiva: La aplicación cuenta con una interfaz de usuario amigable que permite a los usuarios ajustar la cantidad y el plazo de pago de manera sencilla. Cálculo Automático: Los totales y las cuotas mensuales se calculan automáticamente al modificar la cantidad o el plazo, proporcionando resultados en tiempo real. Rango de Cantidad: Los usuarios pueden seleccionar una cantidad entre 0 y 20,000, con incrementos de 100. Opciones de Plazo: Se pueden elegir plazos de 6, 12 o 24 meses para el pago. Resumen de Pagos: La aplicación muestra un resumen claro de los pagos, incluyendo el total a pagar y las cuotas mensuales. Tecnologías Utilizadas React: La aplicación está construida utilizando React, lo que permite una experiencia de usuario fluida y reactiva. JavaScript: Se utiliza JavaScript para la lógica de cálculo y manejo de estado. CSS: Se aplica CSS para el diseño y estilo de la interfaz. Uso de Hooks La aplicación utiliza los hooks useState y useEffect de React para manejar el estado y los efectos secundarios:
 
-Currently, two official plugins are available:
+useState: Se utiliza para gestionar el estado de la cantidad, el plazo, el total a pagar y las cuotas mensuales. Esto permite que la interfaz se actualice automáticamente cuando los usuarios interactúan con la aplicación.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+useEffect: Se emplea para realizar cálculos automáticos. Cada vez que se modifica la cantidad o el plazo, useEffect recalcula el total a pagar y las cuotas mensuales, asegurando que los resultados sean siempre precisos y actualizados.
